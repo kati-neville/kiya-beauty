@@ -1,6 +1,6 @@
-import SvgDribble from "./assets/svgs/dribble";
-import SvgInstagram from "./assets/svgs/instagram";
-import SvgLinkedIn from "./assets/svgs/linkedIn";
+import SvgDribble from "../public/assets/svgs/dribble";
+import SvgInstagram from "../public/assets/svgs/instagram";
+import SvgLinkedIn from "../public/assets/svgs/linkedIn";
 import { Spacer } from "./components/spacer";
 import "./index.css";
 
@@ -8,12 +8,7 @@ function App() {
 	return (
 		<main className="">
 			<section className="bg-gradient-to-r from-white from-[40%] to-pinkBlur pt-10 px-[7vw]">
-				<img
-					width={100}
-					height={100}
-					src="../src/assets/images/logo.png"
-					alt=""
-				/>
+				<img width={100} height={100} src="/assets/images/logo.png" alt="" />
 			</section>
 
 			<section className="bg-gradient-to-tr flex items-center justify-between from-white from-[70%] to-pinkBlur py-10 space-x-8 px-[7vw]">
@@ -39,7 +34,7 @@ function App() {
 					</div>
 				</div>
 				<div className="w-[40%] object-contain">
-					<img src="../src/assets/images/head-section.png" alt="" />
+					<img src="/assets/images/head-section.png" alt="" />
 				</div>
 			</section>
 
@@ -62,7 +57,7 @@ function App() {
 				<Spacer className="h-10" />
 
 				<div className="">
-					<img src="../src/assets/images/mid-section.png" alt="" />
+					<img src="/assets/images/mid-section.png" alt="" />
 				</div>
 
 				<Spacer className="h-20" />
@@ -74,18 +69,18 @@ function App() {
 				<div>
 					<img
 						className="absolute top-20 -z-20 w-3/4"
-						src="../src/assets/images/bg-line.png"
+						src="/assets/images/bg-line.png"
 						alt=""
 					/>
 				</div>
 
 				<div className="w-[50%] flex flex-col space-y-5">
 					<div className="">
-						<img src="../src/assets/images/bottom-section-1.png" alt="" />
+						<img src="/assets/images/bottom-section-1.png" alt="" />
 					</div>
 
 					<div>
-						<img src="../src/assets/images/bottom-section-2.png" alt="" />
+						<img src="/assets/images/bottom-section-2.png" alt="" />
 					</div>
 				</div>
 				<div className="w-[45%] flex flex-col items-end bg-gradient-to-tr from-[50%] from-transparent to-pinkBlur pr-[7.5vw]">
@@ -105,7 +100,7 @@ function App() {
 						<div>
 							<img
 								// className="max-h-[31.5rem]"
-								src="../src/assets/images/bottom-section-3.png"
+								src="/assets/images/bottom-section-3.png"
 								alt=""
 							/>
 						</div>
@@ -116,12 +111,7 @@ function App() {
 			<Spacer className="h-60" />
 
 			<footer className="bg-pinkBlur w-full space-y-6 flex flex-col justify-center items-center py-10">
-				<img
-					width={100}
-					height={100}
-					src="../src/assets/images/logo.png"
-					alt=""
-				/>
+				<img width={100} height={100} src="/assets/images/logo.png" alt="" />
 
 				<div className="flex items-center space-x-8">
 					<SvgDribble />
