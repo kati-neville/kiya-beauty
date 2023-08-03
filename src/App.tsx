@@ -1,11 +1,9 @@
-import { useState } from "react";
-import SvgDribble from "../public/assets/svgs/dribble";
-import SvgInstagram from "../public/assets/svgs/instagram";
-import SvgLinkedIn from "../public/assets/svgs/linkedIn";
-import { Spacer } from "./components/spacer";
 import "./index.css";
-import { doc, serverTimestamp, setDoc } from "firebase/firestore";
+import { useState } from "react";
 import { db } from "../firebase";
+import { Spacer } from "./components/spacer";
+import SvgInstagram from "../public/assets/svgs/instagram";
+import { doc, serverTimestamp, setDoc } from "firebase/firestore";
 
 function App() {
 	const [email, setEmail] = useState("");
@@ -158,7 +156,7 @@ function App() {
 				<div className="w-[45%] flex flex-col items-end bg-gradient-to-tr sm:from-[50%] from-transparent to-pinkBlur pr-[7.5vw]">
 					<div>
 						<div>
-							<p className="font-Playfair font-medium lg:text-5xl text-4xl w-3/4 mb-4">
+							<p className="font-Playfair font-bold lg:text-5xl text-4xl w-3/4 mb-4">
 								Follow us on Instagram
 							</p>
 							<p className="font-Manrope font-light">
@@ -180,9 +178,9 @@ function App() {
 				</div>
 			</section>
 
-			<section className="sm:hidden flex flex-col space-y-8 px-[7vw]">
+			<section className="sm:hidden flex flex-col space-y-8 bg-gradient-to-tr from-transparent from-[50%] to-pinkBlur-lt px-[7vw]">
 				<div className="w-full">
-					<p className="font-Playfair font-medium text-4xl text-center w-3/4 mx-auto mb-4">
+					<p className="font-Playfair font-bold text-4xl text-center w-3/4 mx-auto mb-4">
 						Follow us on Instagram
 					</p>
 					<p className="font-Manrope font-light text-center">
@@ -210,9 +208,11 @@ function App() {
 				<img width={100} height={100} src="/assets/images/logo.png" alt="" />
 
 				<div className="flex items-center space-x-8">
-					<SvgDribble />
-					<SvgInstagram />
-					<SvgLinkedIn />
+					<a
+						href="https://instagram.com/shopkiyabeauty?igshid=MzRlODBiNWFlZA=="
+						target="_blank">
+						<SvgInstagram />
+					</a>
 				</div>
 
 				<p className="font-Inter text-kiya-gray text-xs">
