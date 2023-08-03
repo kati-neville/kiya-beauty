@@ -1,11 +1,9 @@
-import { useState } from "react";
-import SvgDribble from "../public/assets/svgs/dribble";
-import SvgInstagram from "../public/assets/svgs/instagram";
-import SvgLinkedIn from "../public/assets/svgs/linkedIn";
-import { Spacer } from "./components/spacer";
 import "./index.css";
-import { doc, serverTimestamp, setDoc } from "firebase/firestore";
+import { useState } from "react";
 import { db } from "../firebase";
+import { Spacer } from "./components/spacer";
+import SvgInstagram from "../public/assets/svgs/instagram";
+import { doc, serverTimestamp, setDoc } from "firebase/firestore";
 
 function App() {
 	const [email, setEmail] = useState("");
@@ -210,13 +208,11 @@ function App() {
 				<img width={100} height={100} src="/assets/images/logo.png" alt="" />
 
 				<div className="flex items-center space-x-8">
-					{/* <SvgDribble /> */}
 					<a
 						href="https://instagram.com/shopkiyabeauty?igshid=MzRlODBiNWFlZA=="
 						target="_blank">
 						<SvgInstagram />
 					</a>
-					{/* <SvgLinkedIn /> */}
 				</div>
 
 				<p className="font-Inter text-kiya-gray text-xs">
