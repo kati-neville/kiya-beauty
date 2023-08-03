@@ -12,7 +12,7 @@ export default {
 			colors: {
 				pink: "#EAAAD8",
 				pinkBlur: "#FDF3FA",
-				"pinkBlur-lt": "#FDF7FB",
+				"pinkBlur-lt": "#FEF3FA",
 				"kiya-black": "#141414",
 				"kiya-gray": "#555555",
 			},
